@@ -1,0 +1,20 @@
+.container {
+  width: 280px;
+  color: #314d3e;
+  padding: 4px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.textbox {
+  width: 100%;
+  font-size: 14px;
+}
+
+.textbox:focus {
+  outline: 0;
+  border-color: #66afe9;
+}
