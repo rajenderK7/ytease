@@ -1,7 +1,7 @@
 {
   "name": "YTease",
   "version": "0.1.0",
-  "description": "Youtube controls made easy 🚀. Play faster than 2x now.",
+  "description": "Youtube controls made easy 🚀 Play faster than 2x now.",
   "permissions": ["tabs"],
   "host_permissions": ["https://*.youtube.com/*"],
   "background": {
