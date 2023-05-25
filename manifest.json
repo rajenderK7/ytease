@@ -16,18 +16,23 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "assets/favicon.ico",
-        "assets/favicon-16x16.png",
-        "assets/favicon-32x32.png"
+       "assets/icon16.png",
+       "assets/icon32.png",
+       "assets/icon48.png",
+       "assets/icon128.png"
       ],
       "matches": ["https://*.youtube.com/*"]
     }
   ],
+  "icons": {
+    "48": "assets/icon48.png"
+  },
   "action": {
     "default_icon": {
-      "16": "assets/favicon-16x16.png",
-      "24": "assets/favicon.ico",
-      "32": "assets/favicon-32x32.png"
+      "16": "assets/icon16.png",
+      "32": "assets/icon32.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
     },
     "default_title": "YTease",
     "default_popup": "popup.html"
