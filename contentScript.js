@@ -1,5 +1,7 @@
 // TODO: Check Ambient Mode
 
+let sliderContainer, slider;
+
 const createControls = () => {
     const controlsExist = document.getElementsByClassName("ytease-controls")[0];
 
@@ -22,18 +24,21 @@ const createControls = () => {
 
         yteaseControls.appendChild(createSlider());
         ytContainer.appendChild(yteaseControls);
+    } else {
+        setPlaybackRate(slider.value);
     }
 }
 
 const createSlider = () => {
-    const sliderContainer = document.createElement("div");
+    if (sliderContainer) return sliderContainer;
+    sliderContainer = document.createElement("div");
     sliderContainer.style.cssText = `
             display: flex;
             align-items: center;
             width: 100%;
         `
 
-    const slider = document.createElement("input");
+    slider = document.createElement("input");
     slider.type = "range"
     slider.min = 0.25;
     slider.max = 5.0;
